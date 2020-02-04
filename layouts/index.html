@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="{{ .Site.Params.username }}">
+        <meta name="description" content="{{ .Site.Params.description }}">
+        {{ hugo.Generator }}
+        <link rel="stylesheet" href="style.css">
+        <title>{{ .Site.Params.username }}</title>
+    </head>
+    <body>
+        <main>
+            {{ with .Site.Params.github }}
+            <img id="icon" src="https://avatars.githubusercontent.com/{{ . }}" alt="{{ . }} icon">
+            {{ end }}
+            <h1 id="username">{{ .Site.Params.username }}</h1>
+            <ul id="accounts">
+                {{ with .Site.Params.github }}
+                <li><a href="https://github.com/{{ . }}">GitHub</a></li>
+                {{ end }}
+            </ul>
+            {{ .Content }}
+        </main>
+    </body>
+</html>

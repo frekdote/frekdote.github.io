@@ -1,0 +1,6 @@
+baseURL = "https://frekdote.github.io"
+languageCode = "ja-jp"
+
+[params]
+  username = "frekdote"
+  github = "frekdote"
