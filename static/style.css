@@ -39,6 +39,7 @@ main {
 
 #icon {
     display: block;
+    width: 150px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
